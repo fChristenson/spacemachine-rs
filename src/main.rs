@@ -29,7 +29,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     thread::sleep(Duration::from_secs(3));
 
     loop {
-        thread::sleep(duration_to_sleep);
         enigo.key_sequence_parse(&key_string);
+        thread::sleep(duration_to_sleep);
     }
 }
